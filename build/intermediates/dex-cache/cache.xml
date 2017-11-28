@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/zhaoxuyan/Desktop/fragmentdemo/Fragmentation/fragmentation_core/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f07bed456841c6827ac7aa68ceff35f5080d74b0">
+        <dex dex="/Users/zhaoxuyan/Desktop/fragmentdemo/Fragmentation/demo/build/intermediates/pre-dexed/debug/classes_7a9f9f915601aa792a26a75d34d67547f283ee12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhaoxuyan/Desktop/fragmentdemo/Fragmentation/fragmentation_swipeback/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1946c98d29895a4ee465426769a726bab4aa582f">
+        <dex dex="/Users/zhaoxuyan/Desktop/fragmentdemo/Fragmentation/demo/build/intermediates/pre-dexed/debug/classes_20dc90c6340ca7100755a62743f69017f5a16c58.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhaoxuyan/Desktop/fragmentdemo/Fragmentation/eventbus_activity_scope/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="28fcaa86c77f60c4864a3934e3f23ca70b91e667">
+        <dex dex="/Users/zhaoxuyan/Desktop/fragmentdemo/Fragmentation/demo/build/intermediates/pre-dexed/debug/classes_47a4b24a4eb966bea82ce9b7be183beadc887d64.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhaoxuyan/Desktop/fragmentdemo/Fragmentation/fragmentation/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="410fb54f7b02d93e213ad44fe61aad926c880485">
+        <dex dex="/Users/zhaoxuyan/Desktop/fragmentdemo/Fragmentation/demo/build/intermediates/pre-dexed/debug/classes_e8c0a9ae961422a71e4c88fc71428acfca4e6204.jar" />
+    </item>
+
+</items>
