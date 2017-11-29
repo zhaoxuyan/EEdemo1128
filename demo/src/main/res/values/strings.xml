@@ -176,4 +176,10 @@
         <item>Menu13</item>
         <item>Menu14</item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="urgency_text_title">点击求助</string>
+    <string name="urgency_text_detail">点击紧急求助发送信息给紧急联系人</string>
+    <string name="urgency_text_detail_1">(非紧急情况请勿使用)</string>
 </resources>

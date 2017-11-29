@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:text="易医已成功接收到您的求助"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="160dp"
+        android:text="取消求助"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="点击结束求助，确认您已获救" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/urgency_text_detail_1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/hollow_circle" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#f57659" />
+
+    <TextView
+        android:id="@+id/run_urgency_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/hollow_circle_run_urgency"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="取消求助"
+        android:textColor="#ef4823"
+        android:textSize="20sp" />
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/urgency_fab"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="120dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--app:backgroundTint="#e2e71010"-->
+    <!--app:borderWidth="0dp" />-->
+
+
+</LinearLayout>

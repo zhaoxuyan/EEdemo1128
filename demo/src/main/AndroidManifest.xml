@@ -13,7 +13,7 @@
             <!--android:launchMode="singleTask"/>-->
 
         <!--<activity android:name=".demo_wechat.MainActivity"/>-->
-        <activity android:name=".demo_zhihu.MainActivity">
+        <activity android:name=".demo.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
