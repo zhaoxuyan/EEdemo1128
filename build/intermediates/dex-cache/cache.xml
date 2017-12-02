@@ -21,6 +21,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/zhaoxuyan/.android/build-cache/83e423c2131dd27fded77372cb964b8166e433a7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bfdc7bc486bf70c513b96977c51ad083e9e5bda9">
+        <dex dex="/Users/zhaoxuyan/Documents/GitHub/EEdemo1128/demo/build/intermediates/pre-dexed/debug/classes_10471afc9d6bb38b527f4aef1ae6e1b5a2df361e.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/zhaoxuyan/Documents/GitHub/EEdemo1128/fragmentation/build/intermediates/bundles/default/classes.jar"
         jumboMode="false"
         optimize="true"

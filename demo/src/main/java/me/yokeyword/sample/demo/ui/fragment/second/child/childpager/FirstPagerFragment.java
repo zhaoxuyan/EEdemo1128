@@ -69,7 +69,7 @@ public class FirstPagerFragment extends SupportFragment implements SwipeRefreshL
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.zhihu_fragment_first_home, container, false);
+        View view = inflater.inflate(R.layout.zhihu_fragment_second_pager_first, container, false);
         EventBusActivityScope.getDefault(_mActivity).register(this);
         initView(view);
         return view;
