@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import me.yokeyword.fragmentation.SupportFragment;
 import me.yokeyword.sample.R;
-import me.yokeyword.sample.demo.adapter.ViewPagerAdapter;
+import me.yokeyword.sample.demo.adapter.SecondViewPagerAdapter;
 
 /**
  * Created by YoKeyword on 16/6/5.
@@ -42,7 +42,7 @@ public class ViewPagerFragment extends SupportFragment {
 
         mTab.addTab(mTab.newTab());
 
-        mViewPager.setAdapter(new ViewPagerAdapter(getChildFragmentManager(),
+        mViewPager.setAdapter(new SecondViewPagerAdapter(getChildFragmentManager(),
                 "健康","公益"));
         mTab.setupWithViewPager(mViewPager);
     }

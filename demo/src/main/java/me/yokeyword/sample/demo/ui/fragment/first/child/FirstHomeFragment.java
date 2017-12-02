@@ -2,11 +2,15 @@ package me.yokeyword.sample.demo.ui.fragment.first.child;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.youth.banner.Banner;
+import com.youth.banner.BannerConfig;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,6 +18,8 @@ import java.util.List;
 
 import me.yokeyword.fragmentation.SupportFragment;
 import me.yokeyword.sample.R;
+import me.yokeyword.sample.demo.adapter.FirstViewPagerAdapter;
+import me.yokeyword.sample.demo.adapter.SecondPagerFragmentAdapter;
 import me.yokeyword.sample.demo.loader.GlideImageLoader;
 
 /**
@@ -22,11 +28,14 @@ import me.yokeyword.sample.demo.loader.GlideImageLoader;
 public class FirstHomeFragment extends SupportFragment {
 
     //    private Toolbar mToolbar;
-//    private RecyclerView mRecy;
+    private RecyclerView mRecy;
 //    private SwipeRefreshLayout mRefreshLayout;
 //    private FloatingActionButton mFab;
 //
-//    private PagerFragmentAdapter mAdapter;
+    private SecondPagerFragmentAdapter mAdapter;
+
+    private TabLayout mTab;
+    private ViewPager mViewPager;
 //
 //    private boolean mInAtTop = true;
 //    private int mScrollTotal;
@@ -46,7 +55,7 @@ public class FirstHomeFragment extends SupportFragment {
 
     // 图片
     public static List<?> images = new ArrayList<>();
-    // 图片下方的文字
+    // 图片title
     public static List<String> titles = new ArrayList<>();
 
     public static FirstHomeFragment newInstance() {
@@ -62,11 +71,15 @@ public class FirstHomeFragment extends SupportFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.zhihu_fragment_first_home, container, false);
+//        这段代码加上会报错，不知道原因
 //        EventBusActivityScope.getDefault(_mActivity).register(this);
-
-        // 设置
+        initView(view);
+        return view;
+    }
+    private void initView(View view) {
+        // 设置Banner
         // 1. 图片
-        // 2. 图片下方的字
+        // 2. 图片title
         String[] urls = getResources().getStringArray(R.array.url);
         String[] tips = getResources().getStringArray(R.array.title);
         List list = Arrays.asList(urls);
@@ -75,8 +88,20 @@ public class FirstHomeFragment extends SupportFragment {
         titles = new ArrayList(list1);
 
         Banner banner = (Banner) view.findViewById(R.id.banner);
-        banner.setImages(images).setImageLoader(new GlideImageLoader()).start();
-        return view;
+        // 设置图片 + 图片title + 数字
+        banner.updateBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE_INSIDE);
+        banner.setImages(images)
+                .setBannerTitles(titles)
+                .setImageLoader(new GlideImageLoader())
+                .start();
+
+        // 设置TabLayout
+        mTab = (TabLayout) view.findViewById(R.id.first_tab);
+        mTab.addTab(mTab.newTab());
+        mViewPager = (ViewPager) view.findViewById(R.id.first_viewPager);
+        mViewPager.setAdapter(new FirstViewPagerAdapter(getChildFragmentManager(),
+                "我","家人1"));
+        mTab.setupWithViewPager(mViewPager);
     }
 //
 //    private void initView(View view) {
@@ -91,7 +116,7 @@ public class FirstHomeFragment extends SupportFragment {
 //        mRefreshLayout.setColorSchemeResources(R.color.colorPrimary);
 //        mRefreshLayout.setOnRefreshListener(this);
 //
-//        mAdapter = new PagerFragmentAdapter(_mActivity);
+//        mAdapter = new SecondPagerFragmentAdapter(_mActivity);
 //        LinearLayoutManager manager = new LinearLayoutManager(_mActivity);
 //        mRecy.setLayoutManager(manager);
 //        mRecy.setAdapter(mAdapter);
@@ -114,8 +139,8 @@ public class FirstHomeFragment extends SupportFragment {
 //                        // 25.1.0以下的support包,Material过渡动画只有在进栈时有,返回时没有;
 //                        // 25.1.0+的support包，SharedElement正常
 //                        extraTransaction()
-//                                .addSharedElement(((PagerFragmentAdapter.VH) vh).img, getString(R.string.image_transition))
-//                                .addSharedElement(((PagerFragmentAdapter.VH) vh).tvTitle, "tv")
+//                                .addSharedElement(((SecondPagerFragmentAdapter.VH) vh).img, getString(R.string.image_transition))
+//                                .addSharedElement(((SecondPagerFragmentAdapter.VH) vh).tvTitle, "tv")
 //                                .start(fragment);
 //                    } else {
 //                        start(fragment);
@@ -193,5 +218,4 @@ public class FirstHomeFragment extends SupportFragment {
 //        super.onDestroyView();
 //        EventBusActivityScope.getDefault(_mActivity).unregister(this);
 //    }
-
 }

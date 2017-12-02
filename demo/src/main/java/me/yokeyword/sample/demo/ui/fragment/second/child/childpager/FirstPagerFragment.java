@@ -23,7 +23,7 @@ import me.yokeyword.eventbusactivityscope.EventBusActivityScope;
 import me.yokeyword.fragmentation.SupportFragment;
 import me.yokeyword.sample.R;
 import me.yokeyword.sample.demo.MainActivity;
-import me.yokeyword.sample.demo.adapter.PagerFragmentAdapter;
+import me.yokeyword.sample.demo.adapter.SecondPagerFragmentAdapter;
 import me.yokeyword.sample.demo.entity.Article;
 import me.yokeyword.sample.demo.event.TabSelectedEvent;
 import me.yokeyword.sample.demo.helper.DetailTransition;
@@ -39,7 +39,7 @@ public class FirstPagerFragment extends SupportFragment implements SwipeRefreshL
     private SwipeRefreshLayout mRefreshLayout;
     private FloatingActionButton mFab;
 
-    private PagerFragmentAdapter mAdapter;
+    private SecondPagerFragmentAdapter mAdapter;
 
     private boolean mInAtTop = true;
     private int mScrollTotal;
@@ -87,7 +87,7 @@ public class FirstPagerFragment extends SupportFragment implements SwipeRefreshL
         mRefreshLayout.setColorSchemeResources(R.color.colorPrimary);
         mRefreshLayout.setOnRefreshListener(this);
 
-        mAdapter = new PagerFragmentAdapter(_mActivity);
+        mAdapter = new SecondPagerFragmentAdapter(_mActivity);
         LinearLayoutManager manager = new LinearLayoutManager(_mActivity);
         mRecy.setLayoutManager(manager);
         mRecy.setAdapter(mAdapter);
@@ -110,8 +110,8 @@ public class FirstPagerFragment extends SupportFragment implements SwipeRefreshL
                         // 25.1.0以下的support包,Material过渡动画只有在进栈时有,返回时没有;
                         // 25.1.0+的support包，SharedElement正常
                         extraTransaction()
-                                .addSharedElement(((PagerFragmentAdapter.VH) vh).img, getString(R.string.image_transition))
-                                .addSharedElement(((PagerFragmentAdapter.VH) vh).tvTitle, "tv")
+                                .addSharedElement(((SecondPagerFragmentAdapter.VH) vh).img, getString(R.string.image_transition))
+                                .addSharedElement(((SecondPagerFragmentAdapter.VH) vh).tvTitle, "tv")
                                 .start(fragment);
                     } else {
                         start(fragment);
