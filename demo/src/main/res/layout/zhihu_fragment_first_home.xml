@@ -2,49 +2,58 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_weight="8">
 
     <com.youth.banner.Banner
         android:id="@+id/banner"
         android:layout_width="match_parent"
-        android:layout_height="240dp" />
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
 
-    <android.support.design.widget.TabLayout
+    <android.support.design.widget.TabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/first_tab"
         android:layout_width="340dp"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
         app:tabIndicatorColor="#EF9A9A"
         app:tabSelectedTextColor="#EF9A9A"
-        app:tabTextColor="@android:color/darker_gray"
         app:tabTextAppearance="@style/tab_appearance"
-        android:layout_height="40dp"/>
+        app:tabTextColor="@android:color/darker_gray" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/first_viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
 
+    <fragment
+        android:id="@+id/select_doctor"
+        android:name="me.yokeyword.sample.demo.ui.fragment.first.child.childpager.SelectDoctorFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
     <!--<android.support.v4.widget.SwipeRefreshLayout-->
-        <!--android:id="@+id/refresh_layout"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent">-->
+    <!--android:id="@+id/refresh_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
 
-        <!--<android.support.v7.widget.RecyclerView-->
-            <!--android:id="@+id/recy"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:clipChildren="false"-->
-            <!--android:paddingLeft="-12dp"-->
-            <!--android:paddingRight="-12dp" />-->
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/recy"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:clipChildren="false"-->
+    <!--android:paddingLeft="-12dp"-->
+    <!--android:paddingRight="-12dp" />-->
 
     <!--</android.support.v4.widget.SwipeRefreshLayout>-->
 
     <!--<android.support.design.widget.FloatingActionButton-->
-        <!--android:id="@+id/fab"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="right|bottom"-->
-        <!--android:layout_marginBottom="24dp"-->
-        <!--android:layout_marginRight="24dp"-->
-        <!--android:src="@drawable/ic_home_white_24dp" />-->
+    <!--android:id="@+id/fab"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="right|bottom"-->
+    <!--android:layout_marginBottom="24dp"-->
+    <!--android:layout_marginRight="24dp"-->
+    <!--android:src="@drawable/ic_home_white_24dp" />-->
 </LinearLayout>

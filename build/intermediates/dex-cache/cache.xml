@@ -2,85 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/zhaoxuyan/AndroidStudioProjects/EEdomo1128/fragmentation/build/intermediates/bundles/default/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="F:\GitHub\EEdemo1128\demo\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="410fb54f7b02d93e213ad44fe61aad926c880485">
-        <dex dex="/Users/zhaoxuyan/AndroidStudioProjects/EEdomo1128/demo/build/intermediates/pre-dexed/debug/classes_f549f13709e8694aa5393d81889e57696cefc5f8.jar" />
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="F:\GitHub\EEdemo1128\demo\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_6ccdfc1f60ee13c519ffce39a42503a9c28531a8\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/zhaoxuyan/AndroidStudioProjects/EEdomo1128/fragmentation_core/build/intermediates/bundles/default/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="F:\GitHub\EEdemo1128\demo\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="f07bed456841c6827ac7aa68ceff35f5080d74b0">
-        <dex dex="/Users/zhaoxuyan/AndroidStudioProjects/EEdomo1128/demo/build/intermediates/pre-dexed/debug/classes_fdf2136a82f64b19e5423f4935ffa119ee180ad4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/zhaoxuyan/.android/build-cache/83e423c2131dd27fded77372cb964b8166e433a7/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="bfdc7bc486bf70c513b96977c51ad083e9e5bda9">
-        <dex dex="/Users/zhaoxuyan/Documents/GitHub/EEdemo1128/demo/build/intermediates/pre-dexed/debug/classes_10471afc9d6bb38b527f4aef1ae6e1b5a2df361e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/zhaoxuyan/Documents/GitHub/EEdemo1128/fragmentation/build/intermediates/bundles/default/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="410fb54f7b02d93e213ad44fe61aad926c880485">
-        <dex dex="/Users/zhaoxuyan/Documents/GitHub/EEdemo1128/demo/build/intermediates/pre-dexed/debug/classes_62aa701a4773ec3d8e43834e612e59ec2ea22bd7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/zhaoxuyan/Documents/GitHub/EEdemo1128/fragmentation_swipeback/build/intermediates/bundles/default/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="1946c98d29895a4ee465426769a726bab4aa582f">
-        <dex dex="/Users/zhaoxuyan/Documents/GitHub/EEdemo1128/demo/build/intermediates/pre-dexed/debug/classes_827bd521e71206ff26ac7edf6258248ea1063292.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/zhaoxuyan/Documents/GitHub/EEdemo1128/fragmentation_core/build/intermediates/bundles/default/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f07bed456841c6827ac7aa68ceff35f5080d74b0">
-        <dex dex="/Users/zhaoxuyan/Documents/GitHub/EEdemo1128/demo/build/intermediates/pre-dexed/debug/classes_6efe852bf0893a25d4d2815f3e75806ca3b40751.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/zhaoxuyan/AndroidStudioProjects/EEdomo1128/eventbus_activity_scope/build/intermediates/bundles/default/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="28fcaa86c77f60c4864a3934e3f23ca70b91e667">
-        <dex dex="/Users/zhaoxuyan/AndroidStudioProjects/EEdomo1128/demo/build/intermediates/pre-dexed/debug/classes_f42b65e97a117535c74588deff0d730b0eb51e30.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/zhaoxuyan/AndroidStudioProjects/EEdomo1128/fragmentation_swipeback/build/intermediates/bundles/default/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="1946c98d29895a4ee465426769a726bab4aa582f">
-        <dex dex="/Users/zhaoxuyan/AndroidStudioProjects/EEdomo1128/demo/build/intermediates/pre-dexed/debug/classes_089ac223c34037569aab9bbe6d5bdc386f2f4b06.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/zhaoxuyan/Documents/GitHub/EEdemo1128/eventbus_activity_scope/build/intermediates/bundles/default/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="28fcaa86c77f60c4864a3934e3f23ca70b91e667">
-        <dex dex="/Users/zhaoxuyan/Documents/GitHub/EEdemo1128/demo/build/intermediates/pre-dexed/debug/classes_41f7552872c8831fda6885eae9e71e1ee8b464a5.jar" />
+        sha1="b9d296f6236c5fc88651dbec3fa9e87da5efc340">
+        <dex dex="F:\GitHub\EEdemo1128\demo\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_156e8da98d4ca33b9fa7f354185fa58167427f54\classes.dex" />
     </item>
 
 </items>

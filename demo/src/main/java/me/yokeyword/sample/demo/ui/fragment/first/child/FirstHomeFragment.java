@@ -1,13 +1,17 @@
 package me.yokeyword.sample.demo.ui.fragment.first.child;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.RecyclerView;
+import android.transition.Fade;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
@@ -20,13 +24,15 @@ import me.yokeyword.fragmentation.SupportFragment;
 import me.yokeyword.sample.R;
 import me.yokeyword.sample.demo.adapter.FirstViewPagerAdapter;
 import me.yokeyword.sample.demo.adapter.SecondPagerFragmentAdapter;
+import me.yokeyword.sample.demo.helper.DetailTransition;
 import me.yokeyword.sample.demo.loader.GlideImageLoader;
+import me.yokeyword.sample.demo.ui.fragment.CycleFragment;
 
 /**
  * Created by YoKeyword on 16/6/5.
  */
 public class FirstHomeFragment extends SupportFragment {
-
+    private Button select_doctor;
     private TabLayout mTab;
     private ViewPager mViewPager;
     // 图片
@@ -78,8 +84,8 @@ public class FirstHomeFragment extends SupportFragment {
                 .setBannerTitles(titles)
                 .setImageLoader(new GlideImageLoader())
                 .start();
-    }
 
+    }
     //    private Toolbar mToolbar;
     private RecyclerView mRecy;
 //    private SwipeRefreshLayout mRefreshLayout;
