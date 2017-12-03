@@ -27,32 +27,8 @@ import me.yokeyword.sample.demo.loader.GlideImageLoader;
  */
 public class FirstHomeFragment extends SupportFragment {
 
-    //    private Toolbar mToolbar;
-    private RecyclerView mRecy;
-//    private SwipeRefreshLayout mRefreshLayout;
-//    private FloatingActionButton mFab;
-//
-    private SecondPagerFragmentAdapter mAdapter;
-
     private TabLayout mTab;
     private ViewPager mViewPager;
-//
-//    private boolean mInAtTop = true;
-//    private int mScrollTotal;
-//
-//    private String[] mTitles = new String[]{
-//            "Use imagery to express a distinctive voice and exemplify creative excellence.",
-//            "An image that tells a story is infinitely more interesting and informative.",
-//            "The most powerful iconic images consist of a few meaningful elements, with minimal distractions.",
-//            "Properly contextualized concepts convey your message and brand more effectively.",
-//            "Have an iconic point of focus in your imagery. Focus ranges from a single entity to an overarching composition."
-//    };
-//
-    // 原来的图片 未使用
-    private int[] mImgRes = new int[]{
-            R.drawable.bg_first, R.drawable.bg_second, R.drawable.bg_third, R.drawable.bg_fourth, R.drawable.bg_fifth
-    };
-
     // 图片
     public static List<?> images = new ArrayList<>();
     // 图片title
@@ -71,12 +47,20 @@ public class FirstHomeFragment extends SupportFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.zhihu_fragment_first_home, container, false);
-//        这段代码加上会报错，不知道原因
-//        EventBusActivityScope.getDefault(_mActivity).register(this);
         initView(view);
         return view;
     }
+
     private void initView(View view) {
+        mTab = (TabLayout) view.findViewById(R.id.first_tab);
+        mViewPager = (ViewPager) view.findViewById(R.id.first_viewPager);
+
+        mTab.addTab(mTab.newTab());
+
+        mViewPager.setAdapter(new FirstViewPagerAdapter(getChildFragmentManager(),
+                "我","家人1"));
+        mTab.setupWithViewPager(mViewPager);
+
         // 设置Banner
         // 1. 图片
         // 2. 图片title
@@ -94,15 +78,74 @@ public class FirstHomeFragment extends SupportFragment {
                 .setBannerTitles(titles)
                 .setImageLoader(new GlideImageLoader())
                 .start();
-
-        // 设置TabLayout
-        mTab = (TabLayout) view.findViewById(R.id.first_tab);
-        mTab.addTab(mTab.newTab());
-        mViewPager = (ViewPager) view.findViewById(R.id.first_viewPager);
-        mViewPager.setAdapter(new FirstViewPagerAdapter(getChildFragmentManager(),
-                "我","家人1"));
-        mTab.setupWithViewPager(mViewPager);
     }
+
+    //    private Toolbar mToolbar;
+    private RecyclerView mRecy;
+//    private SwipeRefreshLayout mRefreshLayout;
+//    private FloatingActionButton mFab;
+//
+    private SecondPagerFragmentAdapter mAdapter;
+
+//
+//    private boolean mInAtTop = true;
+//    private int mScrollTotal;
+//
+//    private String[] mTitles = new String[]{
+//            "Use imagery to express a distinctive voice and exemplify creative excellence.",
+//            "An image that tells a story is infinitely more interesting and informative.",
+//            "The most powerful iconic images consist of a few meaningful elements, with minimal distractions.",
+//            "Properly contextualized concepts convey your message and brand more effectively.",
+//            "Have an iconic point of focus in your imagery. Focus ranges from a single entity to an overarching composition."
+//    };
+//
+    // 原来的图片 未使用
+//    private int[] mImgRes = new int[]{
+//            R.drawable.bg_first, R.drawable.bg_second, R.drawable.bg_third, R.drawable.bg_fourth, R.drawable.bg_fifth
+//    };
+//
+//    // 图片
+//    public static List<?> images = new ArrayList<>();
+//    // 图片title
+//    public static List<String> titles = new ArrayList<>();
+//
+//
+//    @Nullable
+//    @Override
+//    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+//        View view = inflater.inflate(R.layout.zhihu_fragment_first_home, container, false);
+////        这段代码加上会报错，不知道原因
+////        EventBusActivityScope.getDefault(_mActivity).register(this);
+//        initView(view);
+//        return view;
+//    }
+//    private void initView(View view) {
+//        // 设置Banner
+//        // 1. 图片
+//        // 2. 图片title
+//        String[] urls = getResources().getStringArray(R.array.url);
+//        String[] tips = getResources().getStringArray(R.array.title);
+//        List list = Arrays.asList(urls);
+//        images = new ArrayList(list);
+//        List list1 = Arrays.asList(tips);
+//        titles = new ArrayList(list1);
+//
+//        Banner banner = (Banner) view.findViewById(R.id.banner);
+//        // 设置图片 + 图片title + 数字
+//        banner.updateBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE_INSIDE);
+//        banner.setImages(images)
+//                .setBannerTitles(titles)
+//                .setImageLoader(new GlideImageLoader())
+//                .start();
+//
+//        // 设置TabLayout
+//        mTab = (TabLayout) view.findViewById(R.id.first_tab);
+//        mTab.addTab(mTab.newTab());
+//        mViewPager = (ViewPager) view.findViewById(R.id.first_viewPager);
+//        mViewPager.setAdapter(new FirstViewPagerAdapter(getChildFragmentManager(),
+//                "我","家人1"));
+//        mTab.setupWithViewPager(mViewPager);
+//    }
 //
 //    private void initView(View view) {
 ////        mToolbar = (Toolbar) view.findViewById(R.id.toolbar);
