@@ -21,6 +21,7 @@ import me.yokeyword.sample.demo.ui.fragment.first.ViewPagerCards.CardItem;
 import me.yokeyword.sample.demo.ui.fragment.first.ViewPagerCards.CardPagerAdapter;
 import me.yokeyword.sample.demo.ui.fragment.first.ViewPagerCards.ClickableViewPager;
 import me.yokeyword.sample.demo.ui.fragment.first.ViewPagerCards.ShadowTransformer;
+import me.yokeyword.sample.demo.ui.fragment.first.child.DoctorFragment;
 
 
 /**
@@ -113,9 +114,9 @@ public class MyPagerFragment extends SupportFragment implements CompoundButton.O
             public void onItemClick(int position) {
                 // your code
                 if (getParentFragment().getParentFragment() != null)
-                    ((SupportFragment) getParentFragment()).start(CycleFragment.newInstance(1));
+                    ((SupportFragment) getParentFragment()).start(DoctorFragment.newInstance());
                 else {
-                    CycleFragment fragment = CycleFragment.newInstance(1);
+                    DoctorFragment fragment = DoctorFragment.newInstance();
                     // 这里是使用SharedElement的用例
                     // LOLLIPOP(5.0)系统的 SharedElement支持有 系统BUG， 这里判断大于 > LOLLIPOP
                     if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP) {
