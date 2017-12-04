@@ -99,6 +99,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
+      <excludeFolder url="file://$MODULE_DIR$/build/reports" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 25 Platform" jdkType="Android SDK" />
@@ -116,6 +117,7 @@
     <orderEntry type="library" exported="" name="com.android.support:support-annotations:25.4.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-core-utils-25.4.0" level="project" />
     <orderEntry type="library" exported="" name="org.greenrobot:eventbus:3.0.0@jar" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:/Users/zhaoxuyan/Documents/GitHub/EEdemo1128/demo/src/main/jniLibs/BaiduLBS_Android.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-vector-drawable-25.3.1" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-v4-25.4.0" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-fragment-25.4.0" level="project" />

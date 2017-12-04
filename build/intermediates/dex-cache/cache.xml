@@ -82,5 +82,14 @@
         sha1="1946c98d29895a4ee465426769a726bab4aa582f">
         <dex dex="/Users/zhaoxuyan/AndroidStudioProjects/EEdomo1128/demo/build/intermediates/pre-dexed/debug/classes_089ac223c34037569aab9bbe6d5bdc386f2f4b06.jar" />
     </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhaoxuyan/Documents/GitHub/EEdemo1128/demo/src/main/jniLibs/BaiduLBS_Android.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a81e6de0ebadb7fdf65349620c5f40527f60ed08">
+        <dex dex="/Users/zhaoxuyan/Documents/GitHub/EEdemo1128/demo/build/intermediates/pre-dexed/debug/BaiduLBS_Android_d0496aa88f17964d2a87c9245d3d71f2ac293d4f.jar" />
+    </item>
 
 </items>
