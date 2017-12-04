@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">Fragmentation</string>
 
+    <string name="title_1">医生1</string>
+    <string name="title_2">医生2</string>
+    <string name="title_3">医生3</string>
+    <string name="title_4">医生4</string>
+
+    <string name="text_1">知园社区医生,知园社区</string>
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 

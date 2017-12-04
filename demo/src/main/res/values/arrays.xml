@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="url">
-        <item>http://ww4.sinaimg.cn/large/006uZZy8jw1faic1xjab4j30ci08cjrv.jpg</item>
-        <item>http://ww4.sinaimg.cn/large/006uZZy8jw1faic21363tj30ci08ct96.jpg</item>
-        <item>http://ww4.sinaimg.cn/large/006uZZy8jw1faic259ohaj30ci08c74r.jpg</item>
-        <item>http://ww4.sinaimg.cn/large/006uZZy8jw1faic2b16zuj30ci08cwf4.jpg</item>
-        <item>http://ww4.sinaimg.cn/large/006uZZy8jw1faic2e7vsaj30ci08cglz.jpg</item>
+        <item>https://ws1.sinaimg.cn/large/006tKfTcgy1fm3w8st7foj30ny0f8dgz.jpg</item>
+        <item>https://ws4.sinaimg.cn/large/006tKfTcgy1fm3wbtvvwej30zy0ko41l.jpg</item>
+        <item>https://ws2.sinaimg.cn/large/006tKfTcgy1fm3wier6flj30pq0fydi4.jpg</item>
+        <item>https://ws4.sinaimg.cn/large/006tKfTcgy1fm3wlbmf0cj31060kugoa.jpg</item>
+        <item>https://ws3.sinaimg.cn/large/006tKfTcgy1fm3wm2nzjfj30zo0ligns.jpg</item>
     </array>
 
     <array name="url1">
@@ -34,11 +34,11 @@
         <item>http://bpic.588ku.com/element_origin_min_pic/00/00/05/115732f21927f8d.jpg</item>
     </array>
     <array name="title">
-        <item>51巅峰钜惠</item>
-        <item>十大星级品牌联盟，全场2折起</item>
-        <item>生命不是要超越别人，而是要超越自己。</item>
-        <item>己所不欲，勿施于人。——孔子</item>
-        <item>嗨购5折不要停</item>
+        <item>您的家庭医生</item>
+        <item>上门服务</item>
+        <item>您的社区医生</item>
+        <item>私人医生</item>
+        <item>了解家庭医生</item>
     </array>
     <array name="demo_list">
         <item>banner动画预览</item>
