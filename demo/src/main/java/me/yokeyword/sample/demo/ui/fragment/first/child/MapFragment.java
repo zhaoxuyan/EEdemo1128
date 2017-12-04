@@ -28,13 +28,17 @@ public class MapFragment extends BaseBackFragment {
     private BaiduMap baiduMap;
     private MapStatusUpdate msu;
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        View view = inflater.inflate(R.layout.fragment_map, container, false);
         //在使用SDK各组件之前初始化context信息，传入ApplicationContext
         //注意该方法要再setContentView方法之前实现
-        View view = inflater.inflate(R.layout.fragment_map, container, false);
 
         //？？？
         try {
@@ -49,7 +53,7 @@ public class MapFragment extends BaseBackFragment {
             e.printStackTrace();
         }
         getActivity().setContentView(R.layout.fragment_map);
-        mMapView = (TextureMapView) _mActivity.findViewById(R.id.bmapView);//R.id.bmapView
+        mMapView = (TextureMapView) view.findViewById(R.id.bmapView);//R.id.bmapView
         baiduMap = mMapView.getMap();
         //msu = MapStatusUpdateFactory.newLatLng(new LatLng(29.495801,106.576364));
         msu = MapStatusUpdateFactory.newLatLngZoom(new LatLng(29.495801, 106.576364), 19);
@@ -57,6 +61,7 @@ public class MapFragment extends BaseBackFragment {
 
         baiduMap.setMapStatus(msu);
         //logNetWorkInfo();
+
         return view;
     }
 

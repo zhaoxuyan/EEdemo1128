@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="F:\GitHub\EEdemo1128\demo\src\main\java\me\yokeyword\sample\demo\jniLibs\BaiduLBS_Android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a81e6de0ebadb7fdf65349620c5f40527f60ed08">
+        <dex dex="F:\GitHub\EEdemo1128\demo\build\intermediates\transforms\dex\debug\folders\1000\2\BaiduLBS_Android_cb96843c84a4b8b87f7dc7ffbad414f5cf47bc31\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="F:\GitHub\EEdemo1128\demo\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -16,17 +25,8 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="b9d296f6236c5fc88651dbec3fa9e87da5efc340">
+        sha1="d19a6713e4b1b9b1276066bf62be25db8cad9938">
         <dex dex="F:\GitHub\EEdemo1128\demo\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_156e8da98d4ca33b9fa7f354185fa58167427f54\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\GitHub\EEdemo1128\demo\src\main\java\me\yokeyword\sample\demo\jniLibs\BaiduLBS_Android.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="a81e6de0ebadb7fdf65349620c5f40527f60ed08">
-        <dex dex="F:\GitHub\EEdemo1128\demo\build\intermediates\transforms\dex\debug\folders\1000\2\BaiduLBS_Android_cb96843c84a4b8b87f7dc7ffbad414f5cf47bc31\classes.dex" />
     </item>
 
 </items>
